@@ -1,0 +1,7 @@
+
+for gapminderfile in [U-Z]*.txt
+do
+    echo $gapminderfile
+    #edit the line below so that thhe lowest values are output
+    cut -f 5 $gapminderfile | sort -n | head -1;
+done
